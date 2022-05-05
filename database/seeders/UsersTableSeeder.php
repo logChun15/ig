@@ -18,8 +18,8 @@ class UsersTableSeeder extends Seeder
         User::factory()->count(50)->create();
 
         $user = User::find(1);
-        $user->name = 'log';
-        $user->email = 'log@mail.com';
+        $user->name = 'Luochun';
+        $user->email = 'luochun15@gmail.com';
         $user->password = bcrypt('asdfghjkl');
         $user->is_admin = true;
         $user->save();
