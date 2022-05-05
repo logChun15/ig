@@ -8,9 +8,9 @@
       @include('shared._user_info', ['user' => $user])
     </section>
 
-    @if (Auth::check())
+    {{-- @if (Auth::check())
       @include('users._follow_form')
-    @endif
+    @endif --}}
 
     <section class="stats mt-2">
       @include('shared._stats', ['user' => $user])
